@@ -1,32 +1,97 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Hassan</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header class="header">
-        <img src="./assets/back-2.jpg" alt="" class="header__background">
-        <img src="./assets/My.jpeg" alt="" class="header__myimage">
-        <h1 class="header__name">Hi, I'm Hassan Al-Najjar</h1>
-        <p class="header__informationforme">I CAN CREATE AWESOME STUFF</p>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header" id="home">
+      <img src="./assets/back-2.jpg" alt="" class="header__background" />
+      <div class="header__backgroundColor"></div>
+      <img src="./assets/myim.jpg" alt="" class="header__myimage" />
+      <h1 class="header__name">Hi, I'm Hassan Al-Najjar</h1>
+      <p class="header__informationforme">I CAN CREATE AWESOME STUFF</p>
     </header>
     <nav class="nav">
-        <img src="./assets/h2-removebg-preview.png" alt="Logo" class="nav__logo">
-        <ul class="nav__ul">
-            <li><a href=""> HOME </a></li>
-            <li><a href=""> ABOUT </a></li>
-            <li><a href=""> SERVICES </a></li>
-            <li><a href=""> CONTACT </a></li>
-        </ul>
+      <img
+        src="./assets/h2-removebg-preview.png"
+        alt="Logo"
+        class="nav__logo"
+      />
+      <ul class="nav__ul">
+        <li><a href="#home"> HOME </a></li>
+        <li><a href="#about"> ABOUT </a></li>
+        <li><a href="#services"> SERVICES </a></li>
+        <li><a href="#contact"> CONTACT </a></li>
+      </ul>
     </nav>
 
-    <section class="about">
-        <h1 class="about__firstpara">Hi There! I'm Hassan Al-Najjar</h1>
-        <p class="about__thedescription">Hi There! I'm Hassan Al-Najjar
-            I am a professional web designer from Palestine, Gaza. I create beautiful professional websites using best practice accessibility. I enjoy turning complex problems into simple, beautiful and intuitive interface designs.</p>
+    <section class="about" id="about">
+      <section class="about__leftSection">
+        <h1 class="about__h1">Hi There! I'm Hassan Al-Najjar</h1>
+        <p class="about__description">
+          Hi There! I'm Hassan Al-Najjar I am a professional web designer from
+          Palestine, Gaza. I create beautiful professional websites using best
+          practice accessibility. I enjoy turning complex problems into simple,
+          beautiful and intuitive interface designs.
+        </p>
+        <div class="about__socialMedia">
+          <a href=""><img src="./assets/facebook.png" alt="facebook"/></a>
+          <a href=""><img src="./assets/gmail.png" alt="gamel"/></a>
+          <a href=""><img src="./assets/instag.png" alt="instagram"/></a>
+          <a href=""><img src="./assets/linkedin.png" alt="linkedin"/></a>
+          <a href=""><img src="./assets/twitter.png" alt="twitter"/></a>
+          <a href=""><img src="./assets/git.png" alt="github"/></a>
+
+        </div>
+      </section>
+      <section class="about__rightSection">
+        <h1 class="about__h1">
+          The techniques
+          <img
+            src="./assets/teqa.png"
+            alt=""
+            style="width: 35px; height: 35px;"
+          />
+          I use
+        </h1>
+
+        <div class="about__imageTechniques">
+          <img src="./assets/html.png" alt="HTML" />
+          <img src="./assets/css.png" alt="CSS" />
+          <img src="./assets/js.png" alt="javaScript" />
+        </div>
+      </section>
     </section>
 
-<script src="./js/main.js"></script>
-</body>
+    <section class="servicess " id="services">
+      <div class="servicess__topSection">
+        <div class="servicess__sectinONeInTop">
+          <img src="./assets/WD.png" alt="" />
+          <h1 class="servicess__para">WEB DEVELOPMENT</h1>
+          <p class="servicess__thedescription">
+            convert all on demo servers so you can see on real time how your
+            project looks and give your feedback.
+          </p>
+        </div>
+        <div class="servicess__sectinTowInTop">
+          <img src="./assets/design.png" alt="WEBSITE DESIGN" />
+          <h1 class="servicess__para">WEBSITE DESIGN</h1>
+          <p class="servicess__thedescription">
+            Quality Work requires creativity and understanding of UX & UI of any
+            web project.
+          </p>
+        </div>
+      </div>
+      <div class="servicess__bottomSection">
+        <img src="./assets/suppor.png" alt="SUPPORT" />
+        <h1 class="servicess__para">ONLINE SUPPORT</h1>
+        <p class="servicess__thedescription">
+          You have online support for 3 months.
+        </p>
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>
