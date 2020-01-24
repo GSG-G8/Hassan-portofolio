@@ -41,7 +41,7 @@
   height: 200px;
   border-radius: 50%;
   border: 2px solid rgb(102, 101, 101);
-  background-color: rgb(102, 101, 101) ;
+  background-color: rgb(102, 101, 101);
 }
 
 .nav {
@@ -179,4 +179,64 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.contact {
+  height: 100%;
+  background-color: rgb(82, 82, 82);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+.contact__accoutns {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.contact__parentAccount {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.contact__parentAccount img {
+  width: 50px;
+  height: 50px;
+}
+.contact__theDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.contact__input {
+  width: 295px;
+  height: 40px;
+  margin-bottom: 20px;
+  margin-left: 2px;
+  background: none;
+  border: 1px solid black;
+  outline: none;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.contact__textarea {
+  width: 600px;
+  resize: none;
+  outline: none;
+  margin-bottom: 30px;
+  height: 300px;
+  background: none;
+  border: 1px solid black;
+  outline: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.contact__button{
+  width: 150px;
+  height: 70px;
+  outline: none;
+  background-color: rgb(48, 47, 47);
+  border: 3px solid rgb(117, 115, 115);
+  color: white;
+  font-size: 18px;
 }
