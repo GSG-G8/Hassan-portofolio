@@ -101,6 +101,7 @@
 }
 .about__leftSection {
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 .about__h2 {
   font-size: 30px;
@@ -425,5 +426,17 @@
   }
   100% {
     top: 250;
+  }
+}
+@media  (max-width: 1045px) {
+  .about__rightSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 0px;
+    border-top: 1px solid white;
+    padding-left: 50px;
+    height: 80%;
   }
 }
