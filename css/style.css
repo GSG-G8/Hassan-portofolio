@@ -53,6 +53,7 @@
   left: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0);
+  z-index: 1;
 }
 .nav__logo {
   width: 50px;
@@ -85,7 +86,7 @@
   color: white;
 }
 
-.nav__li--anim:hover{
+.nav__li--anim:hover {
   border-bottom: 2px solid blue;
 }
 .about {
@@ -95,8 +96,8 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: baseline;
-  height: 100%;
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 170px;
 }
 .about__leftSection {
   padding-left: 20px;
@@ -134,7 +135,6 @@
   align-items: center;
   border-left: 1px solid white;
   padding-left: 50px;
-  height: 80%;
 }
 .about__imageTechniques {
   display: flex;
@@ -159,8 +159,8 @@
   color: white;
   flex-wrap: wrap;
   align-items: center;
-  height: 100%;
-  padding-top: 80px;
+  padding-top: 100px;
+  padding-bottom: 170px;
 }
 .servicess__image {
   transform: rotateY(0deg) scaleX(1);
@@ -179,7 +179,6 @@
   font-size: 18px;
   text-align: center;
   word-spacing: 3px;
-  width: 450px;
   padding-top: 20px;
 }
 .servicess__topSection {
@@ -211,13 +210,12 @@
   align-items: center;
 }
 .contact {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
   background-color: rgba(0, 52, 78, 0.315);
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .contact__accoutns {
@@ -275,7 +273,6 @@
   font-size: 20px;
   color: white;
   background: #000000b2;
-
 }
 .contact__button {
   width: 150px;
@@ -292,21 +289,141 @@
   background-color: rgb(117, 115, 115);
   border-radius: 50px;
 }
-.footer{
-width: 100%;
-height: 30%;
-background-color: rgba(0, 0, 0, 0.836);
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
-padding-top: 40px;
+.footer {
+  width: 100%;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.836);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 40px;
 }
-.footer__myName{
+.footer__myName {
   font-size: 40px;
   color: white;
 }
-.footer__CopyRight{
+.footer__CopyRight {
   font-size: 20px;
   color: white;
+}
+.load {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+}
+.load__imageOne {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 290;
+  left: 20;
+  z-index: 4;
+  animation: rotateRight 1s infinite;
+  animation-duration: 6s;
+}
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.load__stickOne {
+  width: 10px;
+  height: 100px;
+  background-color: brown;
+  position: absolute;
+  top: 350;
+  left: 65;
+}
+.load__imageTwo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 290;
+  left: 350;
+  z-index: 4;
+  animation: centerImag 1s infinite;
+  animation-duration: 6s;
+}
+@keyframes centerImag {
+  0% {
+    top: 270;
+  }
+
+  50%{
+    top: 200;
+  }
+  100% {
+    top: 290;
+  }
+}
+.load__stickTwo {
+  width: 10px;
+  height: 100px;
+  background-color: rgb(201, 186, 186);
+  position: absolute;
+  top: 350;
+  left: 395;
+  animation: centerStick 3s;
+}
+.load__imageThree {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 290;
+  right: 20;
+  z-index: 4;
+  animation: rotateLeft 1s infinite ;
+  animation-duration: 6s;
+}
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.load__stickThree {
+  width: 10px;
+  height: 100px;
+  background-color: brown;
+  position: absolute;
+  top: 350;
+  right: 65;
+}
+.load__floor {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(58, 44, 26);
+  position: absolute;
+  top: 450;
+}
+.load__word {
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  top: 320;
+  left:350;
+  font-size: 40px;
+  animation: animWord 1s infinite;
+  color: white;
+  animation-duration: 6s;
+}
+@keyframes animWord {
+  0% {
+    top: 200;
+  }
+
+  50%{
+    top: 150;
+  }
+  100% {
+    top: 250;
+  }
 }

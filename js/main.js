@@ -1,4 +1,5 @@
 const nav = document.getElementById('nav');
+const loadPage = document.querySelector('.load');
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -7,4 +8,8 @@ function scrollFunction() {
   } else{
     nav.style.backgroundColor = 'rgba(255, 255, 255, 0)';
   }
+}
+window.setTimeout(anim,6050);
+function anim(){
+  loadPage.style.display = 'none';
 }
