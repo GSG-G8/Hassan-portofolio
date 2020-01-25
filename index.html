@@ -12,17 +12,17 @@
       <h1 class="header__name">Hi, I'm Hassan Al-Najjar</h1>
       <p class="header__informationforme">I CAN CREATE AWESOME STUFF</p>
     </header>
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <img
-        src="./assets/h2-removebg-preview.png"
+        src="./assets/log.png"
         alt="Logo"
         class="nav__logo"
       />
       <ul class="nav__ul">
-        <li><a href="#home"> HOME </a></li>
-        <li><a href="#about"> ABOUT </a></li>
-        <li><a href="#services"> SERVICES </a></li>
-        <li><a href="#contact"> CONTACT </a></li>
+        <li class="nav__home nav__li--anim"><a href="#home"> HOME </a></li>
+        <li class="nav__about nav__li--anim"><a href="#about"> ABOUT </a></li>
+        <li class="nav__services nav__li--anim"><a href="#services"> SERVICES </a></li>
+        <li class="nav__contact nav__li--anim"><a href="#contact"> CONTACT </a></li>
       </ul>
     </nav>
 
@@ -36,12 +36,12 @@
           beautiful and intuitive interface designs.
         </p>
         <div class="about__socialMedia">
-          <a href=""><img src="./assets/facebook.png" alt="facebook"/></a>
-          <a href=""><img src="./assets/gmail.png" alt="gamel"/></a>
-          <a href=""><img src="./assets/instag.png" alt="instagram"/></a>
-          <a href=""><img src="./assets/linkedin.png" alt="linkedin"/></a>
-          <a href=""><img src="./assets/twitter.png" alt="twitter"/></a>
-          <a href=""><img src="./assets/git.png" alt="github"/></a>
+          <a href=""><img src="./assets/facebook.png" alt="facebook" class="about__socialMediaAnima"/></a>
+          <a href=""><img src="./assets/gmail.png" alt="gamel" class="about__socialMediaAnima"/></a>
+          <a href=""><img src="./assets/instag.png" alt="instagram" class="about__socialMediaAnima"/></a>
+          <a href=""><img src="./assets/linkedin.png" alt="linkedin" class="about__socialMediaAnima"/></a>
+          <a href=""><img src="./assets/twitter.png" alt="twitter" class="about__socialMediaAnima"/></a>
+          <a href=""><img src="./assets/git.png" alt="github" class="about__socialMediaAnima"/></a>
         </div>
       </section>
       <section class="about__rightSection">
@@ -56,9 +56,9 @@
         </h2>
 
         <div class="about__imageTechniques">
-          <img src="./assets/html.png" alt="HTML" />
-          <img src="./assets/css.png" alt="CSS" />
-          <img src="./assets/js.png" alt="javaScript" />
+          <img src="./assets/html.png" alt="HTML" class="about__imageTechniques--animation"/>
+          <img src="./assets/css.png" alt="CSS" class="about__imageTechniques--animation"/>
+          <img src="./assets/js.png" alt="javaScript" class="about__imageTechniques--animation"/>
         </div>
       </section>
     </section>
@@ -66,7 +66,7 @@
     <section class="servicess " id="services">
       <div class="servicess__topSection">
         <div class="servicess__sectinONeInTop">
-          <img src="./assets/WD.png" alt="" />
+          <img src="./assets/WD.png" alt="WEB DEVELOPMENT" class="servicess__image"/>
           <h2 class="servicess__para">WEB DEVELOPMENT</h2>
           <p class="servicess__thedescription">
             convert all on demo servers so you can see on real time how your
@@ -74,7 +74,7 @@
           </p>
         </div>
         <div class="servicess__sectinTowInTop">
-          <img src="./assets/design.png" alt="WEBSITE DESIGN" />
+          <img src="./assets/design.png" alt="WEBSITE DESIGN" class="servicess__image"/>
           <h2 class="servicess__para">WEBSITE DESIGN</h2>
           <p class="servicess__thedescription">
             Quality Work requires creativity and understanding of UX & UI of any
@@ -83,7 +83,7 @@
         </div>
       </div>
       <div class="servicess__bottomSection">
-        <img src="./assets/suppor.png" alt="SUPPORT" />
+        <img src="./assets/suppor.png" alt="SUPPORT" class="servicess__image"/>
         <h2 class="servicess__para">ONLINE SUPPORT</h2>
         <p class="servicess__thedescription">
           You have online support for 3 months.
@@ -92,39 +92,39 @@
     </section>
 
     <section class="contact" id="contact">
-      <h2 class="contact__h2">Contact Me</h2>
       <section class="contact__accoutns">
         <div class="contact__parentAccount">
           <img src="./assets/phone.png" alt="PHONE" />
           <div class="contact__theDetails">
-            <span class="contact__nameContact">PHONE :</span>
+            <span class="contact__nameContact">PHONE </span>
             <span class="contact__detailsName">+1-202-555-0138 </span>
           </div>
         </div>
         <div class="contact__parentAccount">
           <img src="./assets/location.png" alt="location" />
           <div class="contact__theDetails">
-            <span class="contact__nameContact">location :</span>
+            <span class="contact__nameContact">location </span>
             <span class="contact__detailsName">Palestine-Gaza </span>
           </div>
         </div>
         <div class="contact__parentAccount">
           <img src="./assets/email.png" alt="Email" />
           <div class="contact__theDetails">
-            <span class="contact__nameContact">Email : </span>
+            <span class="contact__nameContact">Email  </span>
             <span class="contact__detailsName">HassanOfficial@gmail.com</span>
           </div>
         </div>
 
       </section>
-      <section class="contact__allInput">
-        <div>
+      <section >
+        <div class="contact__allInput">
           <input
             type="text"
             name="name"
             id="name"
             class="contact__input"
             placeholder="Name"
+            
           />
           <input
             type="text"
@@ -132,6 +132,7 @@
             id="email"
             class="contact__input"
             placeholder="Email"
+            style="margin-left: 30px;"
           />
         </div>
         <textarea
@@ -143,8 +144,21 @@
           placeholder="Message"
         ></textarea>
       </section>
-      <button class="contact__button">Send Message</button>
+      <button class="contact__button" >Send Message</button>
     </section>
+    <footer class="footer">
+      <h2 class="footer__myName">Hassan</h2>
+      <div class="footer__accountSocialMedia">
+        <a href=""><img src="./assets/facebook.png" alt="facebook" class="about__socialMediaAnima"/></a>
+        <a href=""><img src="./assets/gmail.png" alt="gamel" class="about__socialMediaAnima"/></a>
+        <a href=""><img src="./assets/instag.png" alt="instagram" class="about__socialMediaAnima"/></a>
+        <a href=""><img src="./assets/linkedin.png" alt="linkedin" class="about__socialMediaAnima"/></a>
+        <a href=""><img src="./assets/twitter.png" alt="twitter" class="about__socialMediaAnima"/></a>
+        <a href=""><img src="./assets/git.png" alt="github" class="about__socialMediaAnima"/></a>
+      </div>
+      <p class="footer__CopyRight"> © 2020. all right reserved. </p>
+    </footer>
     <script src="./js/main.js"></script>
+    
   </body>
 </html>
