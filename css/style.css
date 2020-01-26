@@ -6,7 +6,8 @@
 .header {
   position: relative;
   width: 100%;
-  height: 100%;
+  padding-top: 170px;
+  margin-bottom: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,16 +26,16 @@
 .header__background {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 2000px;
   z-index: -10;
   opacity: 0.9;
 }
 .header__backgroundColor {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 2000px;
   z-index: -9;
-  background-color: rgba(0, 0, 0, 0.63);
+  background-color: rgba(0, 0, 0, 0.884);
 }
 .header__myimage {
   width: 200px;
@@ -292,13 +293,13 @@
 }
 .footer {
   width: 100%;
-  height: 30%;
+  height: 15%;
   background-color: rgba(0, 0, 0, 0.836);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .footer__myName {
   font-size: 40px;
@@ -308,127 +309,11 @@
   font-size: 20px;
   color: white;
 }
-.load {
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 3;
-}
-.load__imageOne {
-  width: 100px;
-  height: 100px;
+.label{
+  z-index: -100;
   position: absolute;
-  top: 290;
-  left: 20;
-  z-index: 4;
-  animation: rotateRight 1s infinite;
-  animation-duration: 6s;
 }
-@keyframes rotateRight {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.load__stickOne {
-  width: 10px;
-  height: 100px;
-  background-color: brown;
-  position: absolute;
-  top: 350;
-  left: 65;
-}
-.load__imageTwo {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 290;
-  left: 350;
-  z-index: 4;
-  animation: centerImag 1s infinite;
-  animation-duration: 6s;
-}
-@keyframes centerImag {
-  0% {
-    top: 270;
-  }
-
-  50%{
-    top: 200;
-  }
-  100% {
-    top: 290;
-  }
-}
-.load__stickTwo {
-  width: 10px;
-  height: 100px;
-  background-color: rgb(201, 186, 186);
-  position: absolute;
-  top: 350;
-  left: 395;
-  animation: centerStick 3s;
-}
-.load__imageThree {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 290;
-  right: 20;
-  z-index: 4;
-  animation: rotateLeft 1s infinite ;
-  animation-duration: 6s;
-}
-@keyframes rotateLeft {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-.load__stickThree {
-  width: 10px;
-  height: 100px;
-  background-color: brown;
-  position: absolute;
-  top: 350;
-  right: 65;
-}
-.load__floor {
-  width: 100%;
-  height: 30px;
-  background-color: rgb(58, 44, 26);
-  position: absolute;
-  top: 450;
-}
-.load__word {
-  width: 10px;
-  height: 100px;
-  position: absolute;
-  top: 320;
-  left:350;
-  font-size: 40px;
-  animation: animWord 1s infinite;
-  color: white;
-  animation-duration: 6s;
-}
-@keyframes animWord {
-  0% {
-    top: 200;
-  }
-
-  50%{
-    top: 150;
-  }
-  100% {
-    top: 250;
-  }
-}
-@media  (max-width: 1045px) {
+@media(max-width: 1045px) {
   .about__rightSection {
     display: flex;
     flex-direction: column;
@@ -438,5 +323,33 @@
     border-top: 1px solid white;
     padding-left: 50px;
     height: 80%;
+  }
+}
+ @media(max-width: 700px) {
+  .nav__ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+} 
+
+@media(max-width: 500px) {
+  .header__background {
+    position: fixed;
+    width: 100%;
+    height: 3250px;
+    z-index: -10;
+    opacity: 0.9;
+  }
+  .header__backgroundColor {
+    position: fixed;
+    width: 100%;
+    height: 3250px;
+    z-index: -9;
+    background-color: rgba(0, 0, 0, 0.884);
   }
 }
